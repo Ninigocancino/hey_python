@@ -197,4 +197,13 @@ elif nivel_seguridad == "MEDIA":
             if test_media_4 == ingresar:
                 print("BIENVENIDO")
 
-    
+elif nivel_seguridad == "ALTA":
+    print("")
+
+    print("Elige un bloque de preguntas para formar tu contraseña")
+    print("")
+
+    print("1) Sobre ti")
+    print("2) Sobre tu familia")
+    print("3) Sobre tu mascota")
+    print("4) sabre tu hobbie")
