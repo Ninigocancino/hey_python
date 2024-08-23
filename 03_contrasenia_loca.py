@@ -116,4 +116,31 @@ elif nivel_seguridad == "MEDIA":
             if test_media_1 == ingresar:
                 print("BIENVENIDO")
 
+
+    elif bloque_q == "2":
+        print("")
+        print("Ingresa la información necesaria:")
+
+        n_familiares = input("Ingresa el numero de hermanos y el numero de primos que tienes (agrega un cero a la derecha si se tratan de cifras de un digito): ").upper()
+        carinio_abue = input("Ingresa el nombre de cariño que le dabas a uno d etus abuelos: ").upper()
+        ciudad_nac =input("Ingresa las iniciales del hospital donde nacio tu mama: ").upper()
+        in_pater = input("Ingresa las iniciales de tus padres: ").upper()
+        n_suerte = input("Ingresa tu numero de la suerte: ")
+
+        contrasenia = n_familiares + carinio_abue + ciudad_nac + in_pater + n_suerte
+        contrasenia_asig_1.append(contrasenia)
+
+        for i in contrasenia_asig_1:
+            print("")
+            print(f"Tu contraseña es {i}")
+
+            print("Provemos que funcione")
+
+            ingresar = i.upper()
+
+            test_media_2 = input("Por favor ingresa tu contraseña: ").upper()
+
+            if test_media_2 == ingresar:
+                print("BIENVENIDO")
+
     
