@@ -171,3 +171,30 @@ elif nivel_seguridad == "MEDIA":
                 print("BIENVENIDO")
 
     
+    elif bloque_q == "4":
+        print("")
+        print("Ingresa la información necesaria:")
+
+        tu_hobbie = input("Ingresa tu hobbie favorito): ").upper()
+        record = input("Ingresa el mejor record en este hobbie, pueden ser mayores puntos obtenidos o racha de practica, si es un cifra de un digito agrega un cero a la derecha: ").upper()
+        objeto_p =input("Ingresa el elemento principal para poder realizar este hobbie: ").upper()
+        rival = input("Ingresa el nombre de tu rival principal sea equipo o persona: ").upper()
+        tiempo_pract = input("Ingresa en meses el tiempo que llevas practicanto este hobbie: ")
+
+        contrasenia = tu_hobbie + record + objeto_p + rival + tiempo_pract
+        contrasenia_asig_1.append(contrasenia)
+
+        for i in contrasenia_asig_1:
+            print("")
+            print(f"Tu contraseña es {i}")
+
+            print("Provemos que funcione")
+
+            ingresar = i.upper()
+
+            test_media_4 = input("Por favor ingresa tu contraseña: ").upper()
+
+            if test_media_4 == ingresar:
+                print("BIENVENIDO")
+
+    
