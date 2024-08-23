@@ -144,3 +144,30 @@ elif nivel_seguridad == "MEDIA":
                 print("BIENVENIDO")
 
     
+    elif bloque_q == "3":
+        print("")
+        print("Ingresa la información necesaria:")
+
+        edad_mascota = input("Ingresa la edad en meses de tu mascota favorita (agrega un cero a la derecha si se trata de una cifra de un digito): ").upper()
+        nombre_mascota = input("Ingresa el nombre de tu mascota favorita: ").upper()
+        especie_mascota =input("Ingresa la familia zoologica a la que pertenece tu mascota: ").upper()
+        cuidador = input("Ingresa el nombre de la persona que suele cuidarlo: ").upper()
+        n_placa = input("Ingresa los dos últimos digitos de la placa de tu mascota: ")
+
+        contrasenia = edad_mascota + nombre_mascota + especie_mascota + cuidador + n_placa
+        contrasenia_asig_1.append(contrasenia)
+
+        for i in contrasenia_asig_1:
+            print("")
+            print(f"Tu contraseña es {i}")
+
+            print("Provemos que funcione")
+
+            ingresar = i.upper()
+
+            test_media_3 = input("Por favor ingresa tu contraseña: ").upper()
+
+            if test_media_3 == ingresar:
+                print("BIENVENIDO")
+
+    
