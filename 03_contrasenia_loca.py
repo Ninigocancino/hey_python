@@ -61,6 +61,18 @@ if nivel_seguridad == "BASICA":
             contrasenia_asig.append(respuesta_p3)
         else: 
             print("Respuesta incorrecta")
+
+        for i in contrasenia_asig[0]:
+            print("")
+            print("Provemos que funcione")
+            print("")
+
+            test_3 = input("Ingresa tu contraseña por favor: ").upper()
+
+            if test_3 == "JUPITER":
+                print("")
+                print("BIENVENIDO")
+                exit()
     
 
 
