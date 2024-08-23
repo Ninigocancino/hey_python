@@ -40,6 +40,21 @@ if nivel_seguridad == "BASICA":
             contrasenia_asig.append(respuesta_p2)
         else: 
             print("Respuesta incorrecta")
+
+        for i in contrasenia_asig:
+            print(f"Tu contraseña es: {i}")
+
+            print("")
+            print("Provemos que funcione")
+            print("")
+
+            test_2 = input("Ingresa tu contaseña por favor: ").upper()
+
+            if test_2 == contrasenia_asig[0]:
+                print("")
+                print("BIENVENIDO")
+
+
     elif ep_clave_01 == "3":
         respuesta_p3 = input('nombra el planeta más grande del sistema solar: ').upper()
         if respuesta_p3 == "JUPITER":
