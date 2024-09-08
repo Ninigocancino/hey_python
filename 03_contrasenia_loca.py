@@ -226,6 +226,20 @@ elif nivel_seguridad == "ALTA":
         l_apellido_abuela = []
         l_random = []
 
+        if artista_fav:
+            l_artista_fav.append(artista_fav)
+            print(l_artista_fav)
+
+        if totem:
+            l_totem.append(totem)
+            print(l_totem)
+
+        if apellido_abuela:
+            l_apellido_abuela.append(apellido_abuela)
+            print(l_apellido_abuela)
+
+
+""""
         contrasenia = fecha + artista_fav + totem + apellido_abuela
         contrasenia_asig_2.append(contrasenia)
 
@@ -241,3 +255,4 @@ elif nivel_seguridad == "ALTA":
 
             if test_media_1 == ingresar:
                 print("BIENVENIDO")
+"""
