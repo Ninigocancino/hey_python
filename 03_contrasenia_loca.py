@@ -238,6 +238,15 @@ elif nivel_seguridad == "ALTA":
             l_apellido_abuela.append(apellido_abuela)
             print(l_apellido_abuela)
 
+        for i in range(0,10):
+            l_random.append(i)
+
+        for i in range(0,10,2):
+            l_random.append(i)
+
+        if l_random:
+            print(l_random)
+
 
 """"
         contrasenia = fecha + artista_fav + totem + apellido_abuela
