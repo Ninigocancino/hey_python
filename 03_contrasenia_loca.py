@@ -239,9 +239,14 @@ elif nivel_seguridad == "ALTA":
             print(l_apellido_abuela)
 
         for i in range(0,10):
-            l_random.append(i)
+            op = 2 * i - 12
+            es = 00
+            if i == op:
+                l_random.append(i)
+            else:
+                l_random.append(es)
 
-        for i in range(0,10,2):
+        for i in range(0,6,2):
             l_random.append(i)
 
         if l_random:
