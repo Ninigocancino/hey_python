@@ -207,3 +207,37 @@ elif nivel_seguridad == "ALTA":
     print("2) Sobre tu familia")
     print("3) Sobre tu mascota")
     print("4) sabre tu hobbie")
+
+    contrasenia_asig_2 = [] 
+
+    bloque_q = input("¿Con qué conjunto de preguntas te gustaría crear tu contraseña?: ")
+
+    if bloque_q == "1":
+        print("")
+        print("Ingresa la información necesaria:")
+
+        fecha = input("Ingresa (con números)el día y el mes de una fecha importante (agrega un cero cuándo solo exista un digito): ").upper()
+        artista_fav = input("Ingresa el nombre de tu artista favorito: ").upper()
+        totem =input("Ingresa el nombre del animal que te representa: ").upper()
+        apellido_abuela = input("Ingresa el segundo apellido de tu abuela materna: ").upper()
+
+        l_artista_fav = []
+        l_totem = []
+        l_apellido_abuela = []
+        l_random = []
+
+        contrasenia = fecha + artista_fav + totem + apellido_abuela
+        contrasenia_asig_2.append(contrasenia)
+
+        for i in contrasenia_asig_2:
+            print("")
+            print(f"Tu contraseña es {i}")
+
+            print("Provemos que funcione")
+
+            ingresar = i.upper()
+
+            test_media_1 = input("Por favor ingresa tu contraseña: ").upper()
+
+            if test_media_1 == ingresar:
+                print("BIENVENIDO")
